@@ -16,8 +16,21 @@ What we started with is
 
 * Here was motivation to use opportunity and improve the view a bit more
 * Changes would be related to adding more details into network overview, like e.g. signal strength, to putting more details into Scan results - not only populate a list of available ESSIDs but also displaying some more details to make the choice easier for the user
+* Add a button (e.g.) for activating connection explicitly. Currently we use the network which is active at time of clicking "Next" button. This can lead to unintended change of connection due to user's confusion.
 
 ![WiFi tab with network details](../pics/network-wifi-proposal_details.png)
+
+* When user invokes Network Scan manually we can either populate the left column with results directly and left user to see details after clicking on particular essid name. This would require implementing a feature "Activate connection to selected network". Another possibility is to display a table with available networks overview and let user pick one as on following picture
+
+	- Pros - filling left column directly
+		- less dialogues to click through
+	- Cons
+		- when searching for a network which connect to and searching for more details user has to click through
+	- Cons - additional overview Popup
+		- additional dialogue, which might contain huge list with lot of columns
+		- the solution can fall to previous solution when user doesn't want to change existing connection (or create new one) immediately
+
+![Network scan result](../pics/network-wifi-scan_result.png)
 
 * Another changes would be related to a workflow how yast parses wifi networks information
 
