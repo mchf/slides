@@ -1,3 +1,5 @@
+Summary of the proposals: [Summary](./new-wifi-tab-summary.md)
+
 ## Original state
 
 What we started with is
