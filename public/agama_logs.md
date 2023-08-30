@@ -12,14 +12,14 @@
 
 2. Where to place it
 ====================
-* standalone script like save_y2logs
+* -> standalone script like save_y2logs
 * CLI command, can be just a way how to invoke another placements (like standalone script)
 * agamactl subcommand, can be just a way how to invoke another placements (like standalone script)
 
 3. What to use for implementation
 =================================
 * bash - should be always available
-* ruby - should be available as long as yast is used as backend
+* -> ruby - should be available as long as yast is used as backend
 * python - seems more popular in suse, cockpit uses it. But does it make sense to pull another language into agama project?
 * rust - already used in agama, but sounds a bit overkill
 
@@ -27,7 +27,7 @@
 =======
 * User has to be able to use the tool during installation (!) even on installed system (?)
 * where to place the implementation
-  - agama project - then the script won't be available in installed system
+  - -> agama project - then the script won't be available in installed system
   - yast project - doesn't make much sense, has almost nothing to do with yast
   - standalone package - any benefit? could cause troubles when requiring new package in installation images, installation patterns, ...
 * multiple log files expected -> output should be a tarball (as in case of save_y2logs)
